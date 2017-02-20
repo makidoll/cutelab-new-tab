@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Tab</title>
+		<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+		<style type="text/css">
+			@font-face {
+				font-family: "Roboto Condensed";
+				src: url("fonts/RobotoCondensed-Regular.eot");
+				src: url("fonts/RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"),
+					url("fonts/RobotoCondensed-Regular.woff") format("woff"),
+					url("fonts/RobotoCondensed-Regular.ttf") format("truetype");
+				font-weight: normal;
+				font-style: normal;
+			}
+			
+			@font-face {
+				font-family: "Roboto Condensed";
+				src: url("fonts/RobotoCondensed-Bold.eot");
+				src: url("fonts/RobotoCondensed-Bold.eot?#iefix") format("embedded-opentype"),
+					url("fonts/RobotoCondensed-Bold.woff") format("woff"),
+					url("fonts/RobotoCondensed-Bold.ttf") format("truetype");
+				font-weight: bold;
+				font-style: normal;
+			}
+
+			body {
+				background-color: #30343F;
+				font-family: "Roboto Condensed";
+				font-size: 16px;
+				color: rgba(255,255,255,0.6);
+			}
+
+			a, a:link, a:visited, a:hover {
+				color: rgba(255,255,255,0.6);
+				text-decoration: none;
+			}
+
+			#content {
+				position: absolute; margin: auto;
+				top: 0; left: 0; right: 0; bottom: 0;
+				width: 860px; height: 440px;
+			}
+
+			td {
+				width: 160px;
+				vertical-align: top;
+			}
+
+			hr {
+				border-color: rgba(255,255,255,0.6);
+			}
+
+			#table-heading {
+				font-weight: bold;
+				font-size: 24px;
+			}
+
+			#table-link {
+				margin-top: 16px;
+			}
+
+			.icon {
+				width: 16px; height: 16px;
+				display: inline-block;
+				background-size: 16px 16px;
+				margin-bottom: -4px;
+			}
+
+			.reddit { background-image: url("favicon/reddit.ico"); }
+			.soundcloud { background-image: url("favicon/soundcloud.ico"); }
+			.facebook { background-image: url("favicon/facebook.ico"); }
+			.twitter { background-image: url("favicon/twitter.ico"); }
+			.youtube { background-image: url("favicon/youtube.ico"); }
+			.kissanime { background-image: url("favicon/kissanime.ico"); }
+			.drive { background-image: url("favicon/drive.ico"); }
+			.github { background-image: url("favicon/github-white.svg"); }
+			.gmail { background-image: url("favicon/gmail.ico"); }
+			.instagram { background-image: url("favicon/instagram.png"); }
+			.classroom { background-image: url("favicon/classroom.png"); }
+			.dojinco { background-image: url("favicon/dojinco.png"); }
+
+			#logo {
+				background-image: url("google-white.png");
+				width: 272px; height: 92px;
+				background-size: 272px 92px;
+				left: 0; right: 0; margin: auto;
+				margin-bottom: 20px;
+				opacity: 0.6;
+			}
+
+			#user-input {
+				border: none;
+				width: 580px; height: 30px;
+				border: solid 1px rgba(255,255,255,0.2);
+				padding-left: 10px;
+				font-family: "Roboto Condensed";
+				font-size: 16px;
+				background-color: #30343F;
+				display: block;
+				left: 0; right: 0; margin: auto;
+				color: rgba(255,255,255,0.6);
+			}
+
+			#user-input:focus {
+			    outline:none;
+			}
+
+			::selection {
+				background-color: rgba(255,255,255,0.2);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<a href="https://www.google.com/search"><div id="logo"></div></a>
+			<form action="https://www.google.com/search" autocomplete="off"><input id="user-input" name="q" placeholder="Search Google or type URL"></form>
+			<table cellpadding="32px" style="margin-top: 40px;">
+				<tr>
+					<td>
+						<div id="table-heading">social</div>
+						<hr>
+						<div id="table-link"><a href="https://instagram.com"><i class="icon instagram"></i> instagram</a></div>
+						<div id="table-link"><a href="https://facebook.com"><i class="icon facebook"></i> facebook</a></div>
+						<div id="table-link"><a href="https://twitter.com"><i class="icon twitter"></i> twitter</a></div>
+					</td>
+					<td>
+						<div id="table-heading">entertainment</div>
+						<hr>
+						<div id="table-link"><a href="https://soundcloud.com/you/likes"><i class="icon soundcloud"></i> soundcloud</a></div>
+						<div id="table-link"><a href="http://kissanime.ru"><i class="icon kissanime"></i> kissanime</a></div>
+						<div id="table-link"><a href="https://dojin.co"><i class="icon dojinco"></i> dojin.co</a></div>
+						<div id="table-link"><a href="https://youtube.com"><i class="icon youtube"></i> youtube</a></div>
+					</td>
+					<td>
+						<div id="table-heading">subreddits</div>
+						<hr>
+						<div id="table-link"><a href="https://reddit.com/r/programmerhumor"><i class="icon reddit"></i> programmerhumor</a></div>
+						<div id="table-link"><a href="https://reddit.com/r/nintendoswitch"><i class="icon reddit"></i> nintendoswitch</a></div>
+						<div id="table-link"><a href="https://reddit.com/r/3dshacks"><i class="icon reddit"></i> 3dshacks</a></div>
+						<div id="table-link"><a href="https://reddit.com/r/unixporn"><i class="icon reddit"></i> unixporn</a></div>
+						<div id="table-link"><a href="https://reddit.com/r/fez"><i class="icon reddit"></i> fez</a></div>
+					</td>
+					<td>
+						<div id="table-heading">productivity</div>
+						<hr>
+						<div id="table-link"><a href="https://drive.google.com/drive/u/1/my-drive"><i class="icon drive"></i> wingate drive</a></div>
+						<div id="table-link"><a href="https://drive.google.com/drive/u/0/my-drive"><i class="icon drive"></i> google drive</a></div>
+						<div id="table-link"><a href="https://classroom.google.com/u/1"><i class="icon classroom"></i> classroom</a></div>
+						<div id="table-link"><a href="https://github.com"><i class="icon github"></i> github</a></div>
+						<div id="table-link"><a href="https://mail.google.com/mail/u/0/#inbox"><i class="icon gmail"></i> gmail</a></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
