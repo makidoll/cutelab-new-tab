@@ -25,7 +25,6 @@
 			}
 
 			body {
-				background-color: #1d1f21;
 				font-family: "Roboto Condensed";
 				font-size: 16px;
 				color: rgba(255,255,255,0.6);
@@ -40,6 +39,7 @@
 				position: absolute; margin: auto;
 				top: 0; left: 0; right: 0; bottom: 0;
 				width: 100%; height: 440px; /* "td width" * "cols" + ("cols" * 64)  */
+				z-index: 2000;
 			}
 
 			td {
@@ -111,7 +111,7 @@
 				padding-left: 10px;
 				font-family: "Roboto Condensed";
 				font-size: 16px;
-				background-color: #1d1f21;
+				background-color: transparent;
 				display: block;
 				left: 0; right: 0; margin: auto;
 				color: rgba(255,255,255,0.8);
@@ -125,9 +125,30 @@
 			::selection {
 				background-color: transparent;
 			}
+
+			#bg, #cover {
+				position: fixed; margin: auto;
+				top: 0; left: 0; right: 0; bottom: 0;
+				width: 100%; height: 100%;
+			}
+
+			#bg { 
+				z-index: 500; 
+				background: no-repeat center center fixed; 
+				background-size: cover;
+				image-rendering: pixelated;
+			}
+
+			#cover {
+				background-color: #1d1f21; 
+				z-index: 1000; 
+				opacity: 0.95;
+			}
 		</style>
 	</head>
 	<body>
+		<div id="bg"></div>
+		<div id="cover"></div>
 		<div id="content">
 			<div id="logo"></div>
 			<form action="https://www.google.com/search" autocomplete="off"><input id="user-input" name="q" placeholder="Search Google"></form>
@@ -179,5 +200,11 @@
 				</tr>
 			</table>
 		</div>
+		<script type="text/javascript">
+			var img = ["girls","deer","fish_shop","shore","rainbow_dog","take_away","sakura","river","pets","calm_train","boat","busy_train"];
+			var rnd = Math.floor(Math.random()*img.length);
+			document.querySelector("#bg").style.backgroundImage = "url(gifs/"+img[rnd]+".gif)";
+
+		</script>
 	</body>
 </html>
