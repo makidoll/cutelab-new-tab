@@ -4,7 +4,7 @@
   "homepage_url": "http://mxmcube.github.io",
   "version": "1.0.2",
   "manifest_version": 2,
-  "description": "Because the new tab isn't good enough... It's joke.",
+  "description": "Because the new tab isn't good enough...",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
