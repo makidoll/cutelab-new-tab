@@ -1,8 +1,8 @@
 {
   "name": "Maki's New Tab",
   "author": "Maki",
-  "homepage_url": "http://mxmcube.github.io",
-  "version": "1.0.2",
+  "homepage_url": "http://maki.js.org",
+  "version": "0.0.1",
   "manifest_version": 2,
   "description": "Because the new tab isn't good enough...",
   "icons": {
@@ -11,6 +11,6 @@
     "128": "icon128.png"
   },
   "chrome_url_overrides" : {
-    "newtab": "tab.html"
+    "newtab": "index.html"
   }
 }
