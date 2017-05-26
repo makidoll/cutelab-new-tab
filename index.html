@@ -94,9 +94,7 @@
 			.lolitawardrobe { background-image: url("favicon/lolitawardrobe_edited.png"); }
 
 			#logo {
-				background-image: url("logo.svg");
 				width: 250px; height: 120px;
-				background-size: auto 120px;
 				margin: auto;
 				margin-bottom: 20px;
 				opacity: 1;
@@ -108,7 +106,7 @@
 				border: none;
 				width: 400px; height: 30px;
 				border: solid 1px rgba(255,255,255,0.2);
-				padding-left: 10px;
+				padding: 0 10px 0 10px;
 				font-family: "Roboto Condensed";
 				font-size: 16px;
 				background-color: transparent;
@@ -116,6 +114,7 @@
 				left: 0; right: 0; margin: auto;
 				color: rgba(255,255,255,0.8);
 				border-radius: 8px;
+				text-align: left;
 			}
 
 			#user-input:focus {
@@ -124,6 +123,10 @@
 
 			::selection {
 				background-color: transparent;
+			}
+
+			#user-input::selection {
+				background-color: rgba(255,255,255,0.2);
 			}
 
 			#bg, #cover {
@@ -150,8 +153,22 @@
 		<div id="bg"></div>
 		<div id="cover"></div>
 		<div id="content">
-			<div id="logo"></div>
-			<form action="https://www.google.com/search" autocomplete="off"><input id="user-input" name="q" placeholder="Search Google"></form>
+			<div id="logo">
+				<svg id="maki-logo" xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 170 85"><path d="M125,5V70a10,10,0,0,1-20,0V15a10,10,0,0,0-20,0V70a10,10,0,0,1-20,0V15a10,10,0,0,0-20,0V70a10,10,0,0,1-20,0V15A10,10,0,0,0,5,15V80" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:10px"/><path d="M130,35a15,15,0,0,0,15-15V5" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:10px"/><path d="M165,5V70a10,10,0,0,1-20,0V50a15,15,0,0,0-15-15" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:10px"/></svg>
+				<style id="maki-css">
+					#maki-logo {
+						display: block;
+						margin: auto;
+					}
+
+					#maki-logo>path {
+						stroke: #fff;
+						animation-fill-mode: forwards;
+						animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1); 
+					}
+				</style>
+			</div>
+			<form action="https://duckduckgo.com" autocomplete="off"><input id="user-input" name="q" placeholder="Search DuckDuckGo"></form>
 			<table cellpadding="32px" style="margin-top: 40px;">
 				<tr>
 					<td>
