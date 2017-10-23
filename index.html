@@ -38,7 +38,7 @@
 			#content {
 				position: absolute; margin: auto;
 				top: 0; left: 0; right: 0; bottom: 0;
-				width: 100%; height: 500px; /* "td width" * "cols" + ("cols" * 64)  */
+				width: 100%; height: 480px;
 				z-index: 2000;
 			}
 
@@ -100,6 +100,9 @@
 			.feedly			{ background-image: url("favicon/feedly.ico"); }
 			.photos			{ background-image: url("favicon/photos.png"); }
 			.allkeyshop		{ background-image: url("favicon/allkeyshop.png"); }
+			.gmail			{ background-image: url("favicon/gmail.ico"); }
+			.maki			{ background-image: url("favicon/maki.ico"); }
+			.wingate		{ background-image: url("favicon/wingate.png"); }
 
 			#logo {
 				width: 250px; height: 120px;
@@ -176,8 +179,8 @@
 					}
 				</style>
 			</div>
-			<form action="https://encrypted.google.com/search" autocomplete="off"><input id="user-input" name="q" placeholder="Search Google"></form>
-			<table cellpadding="32px" style="margin-top: 40px;">
+			<form action="https://google.com/search" autocomplete="off"><input id="user-input" name="q" placeholder="Search Google"></form>
+			<table cellpadding="16px" style="margin-top: 40px;">
 				<tr>
 					<td>
 						<div id="table-heading">social</div>
@@ -211,20 +214,28 @@
 						<div id="table-heading">subreddits</div>
 						<hr>
 						<div id="table-link"><a href="https://reddit.com/r/programmerhumor"><i class="icon reddit"></i> programmerhumor</a></div>
-						<div id="table-link"><a href="https://reddit.com/r/nintendoswitch"><i class="icon reddit"></i> nintendoswitch</a></div>
+						<div id="table-link"><a href="https://reddit.com/r/crappydesign"><i class="icon reddit"></i> crappydesign</a></div>
 						<div id="table-link"><a href="https://reddit.com/r/3dshacks"><i class="icon reddit"></i> 3dshacks</a></div>
 						<div id="table-link"><a href="https://reddit.com/r/unixporn"><i class="icon reddit"></i> unixporn</a></div>
 						<div id="table-link"><a href="https://reddit.com/r/google"><i class="icon reddit"></i> google</a></div>
 						<div id="table-link"><a href="https://reddit.com/r/fez"><i class="icon reddit"></i> fez</a></div>
 					</td>
 					<td>
-						<div id="table-heading">google suite</div>
+						<div id="table-heading">school</div>
 						<hr>
-						<div id="table-link"><a href="https://classroom.google.com/u/1"><i class="icon classroom"></i> classroom</a></div>
+						<div id="table-link"><a href="https://classroom.google.com/?authuser=1"><i class="icon classroom"></i> classroom</a></div>
+						<div id="table-link"><a href="https://makixx.github.io/school-stuff/timetable"><i class="icon wingate"></i> timetable</a></div>
+						<div id="table-link"><a href="https://mail.google.com/mail/u/1"><i class="icon gmail"></i> gmail</a></div>
+						<div id="table-link"><a href="https://drive.google.com/drive/u/1/my-drive"><i class="icon drive"></i> drive</a></div>
+						<div id="table-link"><a href="https://keep.google.com/u/1"><i class="icon keep"></i> keep</a></div>
+					</td>
+					<td>
+						<div id="table-heading">google</div>
+						<hr>
 						<div id="table-link"><a href="https://calendar.google.com"><i class="icon calendar"></i> calendar</a></div>
 						<div id="table-link"><a href="https://photos.google.com"><i class="icon photos"></i> photos</a></div>
-						<div id="table-link"><a href="https://inbox.google.com/u/0"><i class="icon inbox"></i> inbox</a></div>
-						<div id="table-link"><a href="https://drive.google.com/drive/u/1/my-drive"><i class="icon drive"></i> drive</a></div>
+						<div id="table-link"><a href="https://inbox.google.com"><i class="icon inbox"></i> inbox</a></div>
+						<div id="table-link"><a href="https://drive.google.com/drive"><i class="icon drive"></i> drive</a></div>
 						<div id="table-link"><a href="https://keep.google.com"><i class="icon keep"></i> keep</a></div>
 					</td>
 				</tr>
