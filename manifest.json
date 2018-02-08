@@ -2,7 +2,7 @@
   "name": "Maki's New Tab",
   "author": "Maki",
   "homepage_url": "http://maki.cat",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "manifest_version": 2,
   "description": "Because the new tab isn't good enough...",
   "icons": {
