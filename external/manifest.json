@@ -11,6 +11,6 @@
 		"128": "icon128.png"
 	},
 	"chrome_url_overrides" : {
-		"newtab": "https://makixx.github.io/new-tab"
+		"newtab": "index.html"
 	}
 }
