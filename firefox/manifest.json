@@ -1,0 +1,16 @@
+{
+	"name": "Maki's New Tab",
+	"author": "Maki",
+	"homepage_url": "http://maki.cat",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"description": "Because the new tab isn't good enough...",
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"chrome_url_overrides" : {
+		"newtab": "https://makixx.github.io/new-tab"
+	}
+}
