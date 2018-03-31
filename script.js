@@ -5,21 +5,10 @@
 //
 // That's dumb. :/
 
-var img = ["girls","deer","fish_shop","shore","rainbow_dog","take_away","sakura","river","pets","calm_train","boat","busy_train"];
+var img = ["boat","busy_train","calm_train","deer","fish_pond","fish_shop","girls","girls_waiting","home","pets","rainbow_dog","river","sakura","shore","take_away"];
 var rnd = Math.floor(Math.random()*img.length);
 document.querySelector("#bg").style.backgroundImage = "url(gifs/"+img[rnd]+".gif)";
 
 // Animated logo
 
-var p1 = document.querySelector("#maki-logo>path:nth-child(1)").getTotalLength();
-var p2 = document.querySelector("#maki-logo>path:nth-child(2)").getTotalLength();
-var p3 = document.querySelector("#maki-logo>path:nth-child(3)").getTotalLength();
-
-document.querySelector("#maki-css").innerHTML +=
-	"@keyframes p1 { from { stroke-dashoffset: "+p1+"; } to { stroke-dashoffset: "+p1*2+"; } }"+
-	"@keyframes p2 { from { stroke-dashoffset: "+p2+"; } to { stroke-dashoffset: "+0   +"; } }"+
-	"@keyframes p3 { from { stroke-dashoffset: "+p3+"; } to { stroke-dashoffset: "+p3*2+"; } }"+
-
-	"#maki-logo>path:nth-child(1) { stroke-dashoffset: "+p1+"; stroke-dasharray: "+p1+"; animation-name: p1; animation-duration: 1400ms; animation-delay: 0ms; } "+
-	"#maki-logo>path:nth-child(2) { stroke-dashoffset: "+p2+"; stroke-dasharray: "+p2+"; animation-name: p2; animation-duration: 1000ms; animation-delay: 1000ms; } "+
-	"#maki-logo>path:nth-child(3) { stroke-dashoffset: "+p3+"; stroke-dasharray: "+p3+"; animation-name: p3; animation-duration: 1000ms; animation-delay: 1000ms; } ";	
+new MakiLogo(document.getElementById("logo")).intro();
