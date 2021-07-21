@@ -5,10 +5,10 @@ networks:
             name: traefik
 services:
     cutelab:
-        image: httpd:alpine
+        image: dragas/thttpd
         restart: always
         volumes:
-            - .:/usr/local/apache2/htdocs/:ro
+            - .:/var/www/http/:ro
         labels:
             - traefik.enable=true
             - traefik.http.routers.cutelab.rule=Host("cutelab.space")
@@ -20,3 +20,4 @@ services:
         networks:
             - default
             - traefik
+
