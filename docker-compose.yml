@@ -1,0 +1,22 @@
+version: "3.6"
+networks:
+    traefik:
+        external:
+            name: traefik
+services:
+    cutelab:
+        image: httpd:latest
+        restart: always
+        volumes:
+            - .:/usr/local/apache2/htdocs/:ro
+        labels:
+            - traefik.enable=true
+            - traefik.http.routers.cutelab.rule=Host("cutelab.space")
+            - traefik.http.routers.cutelab.entrypoints=websecure
+            - traefik.http.routers.cutelab.service=cutelab
+            - traefik.http.routers.cutelab.tls.certresolver=le
+            - traefik.http.services.cutelab.loadbalancer.server.port=80
+            - traefik.docker.network=traefik
+        networks:
+            - default
+            - traefik
