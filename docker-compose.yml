@@ -5,7 +5,7 @@ networks:
             name: traefik
 services:
     cutelab:
-        image: httpd:latest
+        image: httpd:alpine
         restart: always
         volumes:
             - .:/usr/local/apache2/htdocs/:ro
