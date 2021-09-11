@@ -15,14 +15,14 @@ services:
             - traefik.http.routers.cutelab.rule=Host("cutelab.space")
             - traefik.http.routers.cutelab.entrypoints=websecure
             - traefik.http.routers.cutelab.service=cutelab
-            - traefik.http.routers.cutelab.tls.certresolver=zerossl
+            - traefik.http.routers.cutelab.tls.certresolver=le
             - traefik.http.services.cutelab.loadbalancer.server.port=80
             - traefik.docker.network=traefik
 
             - traefik.http.routers.cutelab-www.rule=Host("www.cutelab.space")
             - traefik.http.routers.cutelab-www.entrypoints=websecure
             - traefik.http.routers.cutelab-www.middlewares=cutelab-www
-            - traefik.http.routers.cutelab-www.tls.certresolver=zerossl
+            - traefik.http.routers.cutelab-www.tls.certresolver=le
             - traefik.http.middlewares.cutelab-www.redirectregex.regex=^https?://(?:www\\.)?(.+)
             - traefik.http.middlewares.cutelab-www.redirectregex.replacement=https://$${1}
             - traefik.http.middlewares.cutelab-www.redirectregex.permanent=true
