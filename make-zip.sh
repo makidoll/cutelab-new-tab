@@ -1,0 +1,1 @@
+zip -r -FS ./new-tab.zip * --exclude '*.git*'

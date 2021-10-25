@@ -10,7 +10,12 @@
 		"48": "icon48.png",
 		"128": "icon128.png"
 	},
-	"chrome_url_overrides" : {
+	"chrome_url_overrides": {
 		"newtab": "index.html"
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "new-tab@maki.cafe"
+		}
 	}
 }
